@@ -4,7 +4,6 @@ import {
   Route,
   Routes,
   NavLink,
-  Link,
 } from "react-router-dom";
 import Home from "./pages/home";
 import Photos from "./pages/photos";
@@ -93,15 +92,15 @@ const App = () => {
                       title="Want to see the source code to this website? Click here!"
                       placement="right"
                     >
-                      <Link
+                      <a
                         className="link"
                         href="https://github.com/kyriosaa/meikwtc"
                         target="_blank"
-                        rel="noopener"
+                        rel="noreferrer"
                         color="black"
                       >
                         <FaGithub size={25} />
-                      </Link>
+                      </a>
                     </Tooltip>
                   </ListItem>
                 </List>
