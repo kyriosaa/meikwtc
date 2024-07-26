@@ -2,6 +2,14 @@ body {
   background-color: #f0f0f0;
 }
 
+.link {
+  color: black;
+}
+
+.link:hover {
+  color: #ffb3c6;
+}
+
 .photos-title {
   font-family: "MingLiU";
   font-size: 4em;

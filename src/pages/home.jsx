@@ -23,12 +23,12 @@ const Home = () => {
         <IconButton
           variant="contained"
           color="lotus"
-          className="animate__animated animate__bounce animate__delay-1s animate__repeat-1"
+          className="animate__animated animate__bounce  animate__repeat-1"
           onClick={handleClick}
           size="large"
-          sx={{ mt: 50 }}
+          sx={{ mt: 40 }}
         >
-          <FaGift />
+          <FaGift size={100} />
         </IconButton>
       ) : (
         <Typography class="photos-title animate__animated animate__fadeInDown animate__slow">

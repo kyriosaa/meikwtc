@@ -142,7 +142,13 @@ export default function Photos() {
         }}
       >
         <Box class="animate__animated animate__fadeIn ">
-          <ImageList variant="masonry" cols={3} gap={8} sx={{ width: 1600 }}>
+          <ImageList
+            variant="masonry"
+            cols={3}
+            gap={8}
+            sx={{ width: 1600 }}
+            loading="eager"
+          >
             {itemData.map((item) => (
               <Tooltip
                 TransitionComponent={Fade}

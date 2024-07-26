@@ -4,6 +4,7 @@ import {
   Route,
   Routes,
   NavLink,
+  Link,
 } from "react-router-dom";
 import Home from "./pages/home";
 import Photos from "./pages/photos";
@@ -11,13 +12,16 @@ import {
   AppBar,
   Box,
   Divider,
+  Fade,
   List,
   ListItem,
   Toolbar,
+  Tooltip,
   Typography,
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import "./styles.css";
+import { FaGithub } from "react-icons/fa";
 
 const App = () => {
   // Navigation links
@@ -82,6 +86,24 @@ const App = () => {
                       </Typography>
                     </ListItem>
                   ))}
+                  <ListItem>
+                    <Tooltip
+                      TransitionComponent={Fade}
+                      TransitionProps={{ timeout: 600 }}
+                      title="Want to see the source code to this website? Click here!"
+                      placement="right"
+                    >
+                      <Link
+                        className="link"
+                        href="https://github.com/kyriosaa/meikwtc"
+                        target="_blank"
+                        rel="noopener"
+                        color="black"
+                      >
+                        <FaGithub size={25} />
+                      </Link>
+                    </Tooltip>
+                  </ListItem>
                 </List>
               </Box>
             </Toolbar>
