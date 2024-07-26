@@ -1,0 +1,22 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.photos-title {
+  font-family: "MingLiU";
+  font-size: 4em;
+  color: black;
+}
+
+.pretendard {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+.pretendard-light {
+  font-family: "Pretendard Variable", sans-serif;
+  font-weight: 300;
+}
+
+.constantia {
+  font-family: "Constantia", serif;
+}
